@@ -18,7 +18,7 @@ class Bulbizarre extends Component {
 
     async componentDidMount() {
         try {
-            const res = await Axios.get(`https://pokeapi.co/api/v2/pokemon/bulbasaur`);
+            const res = await Axios.get(`https://a4l3z9des2.execute-api.eu-west-3.amazonaws.com/dev/pokemon/bulbasaur`);
             const data = res.data;
             this.setState({
                 isLoaded: true,
